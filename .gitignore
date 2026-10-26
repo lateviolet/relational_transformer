@@ -26,3 +26,8 @@ results/**/*.log
 .DS_Store
 .idea/
 .vscode/
+
+SUMMARY_EN.pdf
+Summary_relational_transformer.pdf
+Summary.md
+.gitignore

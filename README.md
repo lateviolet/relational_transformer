@@ -3,11 +3,6 @@
 Controlled experiments on how depth, attention heads, and MLPs contribute to
 multi-item retrieval in Transformers.
 
-The project starts from Shi and Cao's random-walk analysis: attention selects a
-parent state, and the value/readout matrix applies a transition. I extend that
-idea to a cleaner question: how does a Transformer retrieve several independent
-answers when trained from scratch?
-
 ## Key finding
 
 Two independent answers do not automatically require two attention heads.
