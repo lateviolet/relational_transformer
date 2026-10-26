@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_query_swap.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 2,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.4375,
+  "samples": [
+    {
+      "expected": "Kalani, Opal",
+      "completion": "Kalni, Opal\n\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:",
+      "correct": false
+    },
+    {
+      "expected": "Nadir, Talia",
+      "completion": "Nadir, Talia",
+      "correct": true
+    },
+    {
+      "expected": "Helena, Daria",
+      "completion": "Tariq, Kofi.\nExplanation: Tariq, Kofi, are the two names with a comma separated",
+      "correct": false
+    },
+    {
+      "expected": "Willa, Rami",
+      "completion": "Willa, Ndir\n\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:\nExplanation:",
+      "correct": false
+    },
+    {
+      "expected": "Rhea, Priya",
+      "completion": "Rhea, Priya",
+      "correct": true
+    },
+    {
+      "expected": "Leila, Jasper",
+      "completion": "Ines, Omar\nInes, Omar\nInes, Omar\nInes, Omar\nInes, Omar",
+      "correct": false
+    },
+    {
+      "expected": "Orla, Mira",
+      "completion": "Orla, Mira\n\nExplanation:",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": "Cyrus, Yusuf",
+      "correct": true
+    },
+    {
+      "expected": "Ines, Uma",
+      "completion": "Valia, Idris, in that order.\nExplanation: The two names with a comma, in that order,",
+      "correct": false
+    },
+    {
+      "expected": "Gustav, Willa",
+      "completion": "Gustav, Idris\n\nExplanation:",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gideon",
+      "completion": "Rafael, Gideon",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": "R, C, Y, Z, W, N, W, N, W, N, W, N,",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Bilal",
+      "completion": "Hana, Bilal\n\nExplanation:",
+      "correct": false
+    },
+    {
+      "expected": "Helena, Ulyana",
+      "completion": "Helena, Ulyana",
+      "correct": true
+    },
+    {
+      "expected": "Avery, Rhea",
+      "completion": "Zara, Rhea.\nIn the direct report targets for Opal and Gustav, in that order, respectively.",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Zoe",
+      "completion": "Valia, Zoe",
+      "correct": false
+    }
+  ]
+}

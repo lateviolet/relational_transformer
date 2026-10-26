@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_unseen_templates.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 2,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.453125,
+  "samples": [
+    {
+      "expected": "Cesar, Willa",
+      "completion": "Cesar, Willa",
+      "correct": true
+    },
+    {
+      "expected": "Zara, Zoya",
+      "completion": "Zara, Zoya.\n\nWhat are the Zora and the Zora, and what are the Cesar and Yus",
+      "correct": false
+    },
+    {
+      "expected": "Jamal, Nikolai",
+      "completion": "Jamal, Nikolai",
+      "correct": true
+    },
+    {
+      "expected": "Willa, Eitan",
+      "completion": "Eitan, Tariq, Wila, Wila, Wila, Wila, Wila, Wila",
+      "correct": false
+    },
+    {
+      "expected": "Priya, Kalani",
+      "completion": "Priya, Kalani",
+      "correct": true
+    },
+    {
+      "expected": "Yuki, Eitan",
+      "completion": "Helena, Eitan, Taital, Nomena, Nomena, Nomena, Nomena",
+      "correct": false
+    },
+    {
+      "expected": "Rami, Amara",
+      "completion": "Rami, Amara",
+      "correct": true
+    },
+    {
+      "expected": "Daria, Fiona",
+      "completion": "Daria, Jasper, Mina, Fiona, Petra, Rafael, Nikali, Omar, Nikali,",
+      "correct": false
+    },
+    {
+      "expected": "Winston, Noor",
+      "completion": "Winston, Noor",
+      "correct": true
+    },
+    {
+      "expected": "Rafael, Kofi",
+      "completion": "Kofi, and Kofi, respectively.\n\nWhat are the answers with a comma, and what are the answers with a",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Kofi",
+      "completion": "ullyanakofi",
+      "correct": false
+    },
+    {
+      "expected": "Imani, Emil",
+      "completion": "Zari, Imani, Emil, respectively.\n\nWhat are Zari and Imani, and what are Dari and",
+      "correct": false
+    },
+    {
+      "expected": "Lucia, Amara",
+      "completion": "Lucia, Amora",
+      "correct": false
+    },
+    {
+      "expected": "Sami, Yusuf",
+      "completion": "Sami, Yusuf, Gideon,",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Yosef",
+      "completion": "Opal, Yosef",
+      "correct": true
+    },
+    {
+      "expected": "Jamal, Leila",
+      "completion": "Jamal, Leila.\n\nWhat are the answers with a comma, and what are the answers with a comma, and what",
+      "correct": false
+    }
+  ]
+}

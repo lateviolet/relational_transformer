@@ -1,0 +1,91 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed1",
+  "data": "./nlp_pair_data/test_unseen_relation.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "examples": 128,
+  "accuracy": 0.9921875,
+  "samples": [
+    {
+      "expected": "Teo, Selin",
+      "completion": "Teo, Selin",
+      "correct": true
+    },
+    {
+      "expected": "Leila, Kalani",
+      "completion": "Leila, Kalani",
+      "correct": true
+    },
+    {
+      "expected": "Dalia, Rami",
+      "completion": "Dalia, Rami",
+      "correct": true
+    },
+    {
+      "expected": "Cesar, Freya",
+      "completion": "Cesar, Freya",
+      "correct": true
+    },
+    {
+      "expected": "Amara, Yusuf",
+      "completion": "Amara, Yusuf",
+      "correct": true
+    },
+    {
+      "expected": "Zara, Leila",
+      "completion": "Zara, Leila",
+      "correct": true
+    },
+    {
+      "expected": "Valeria, Amara",
+      "completion": "Valeria, Amara",
+      "correct": true
+    },
+    {
+      "expected": "Valeria, Cesar",
+      "completion": "Valeria, Cesar",
+      "correct": true
+    },
+    {
+      "expected": "Orla, Amara",
+      "completion": "Orla, Amara",
+      "correct": true
+    },
+    {
+      "expected": "Yosef, Hassan",
+      "completion": "Yosef, Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Gustav",
+      "completion": "Opal, Gustav",
+      "correct": true
+    },
+    {
+      "expected": "Cesar, Rafael",
+      "completion": "Cesar, Rafael",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus, Tariq",
+      "completion": "Cyrus, Tariq",
+      "correct": true
+    },
+    {
+      "expected": "Freya, Avery",
+      "completion": "Freya, Avery",
+      "correct": true
+    },
+    {
+      "expected": "Imani, Opal",
+      "completion": "Imani, Opal",
+      "correct": true
+    },
+    {
+      "expected": "Rami, Uma",
+      "completion": "Rami, Uma",
+      "correct": true
+    }
+  ]
+}

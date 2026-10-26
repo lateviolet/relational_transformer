@@ -1,0 +1,49 @@
+{
+  "model": "Qwen/Qwen3-1.7B-Base",
+  "adapter": "",
+  "data": "./nlp_data/valid_id.jsonl",
+  "examples": 8,
+  "accuracy": 0.125,
+  "samples": [
+    {
+      "expected": "Sofia",
+      "completion": "Gideon\n\nTrace two edges of type \"mentors\",",
+      "correct": false
+    },
+    {
+      "expected": "Hassan",
+      "completion": "To solve this problem, we need to follow the \"ment",
+      "correct": false
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Freya",
+      "completion": "Sofia\n\nTrace two edges of type \"reports to\", starting",
+      "correct": false
+    },
+    {
+      "expected": "Bilal",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Amara",
+      "completion": "Zoya",
+      "correct": false
+    },
+    {
+      "expected": "Mateo",
+      "completion": "Mateo",
+      "correct": true
+    },
+    {
+      "expected": "Gideon",
+      "completion": "To solve this problem, we need to follow the \"reports",
+      "correct": false
+    }
+  ]
+}

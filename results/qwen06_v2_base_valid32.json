@@ -1,0 +1,90 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "",
+  "data": "./nlp_data_v2/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "examples": 32,
+  "accuracy": 0.3125,
+  "samples": [
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Amara",
+      "completion": "Sofia\n\nWhat is the name of the person who is the",
+      "correct": false
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Amara",
+      "completion": "Freya mentors Zoya. Zoya mentors Amara.",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Eitan\n\nWhat is the name of the first person in",
+      "correct": false
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Tariq reports to Bilal. Bilal reports to",
+      "correct": false
+    },
+    {
+      "expected": "Ines",
+      "completion": "In this exercise, we are given a list of people and",
+      "correct": false
+    },
+    {
+      "expected": "Kofi",
+      "completion": "Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Bilal",
+      "completion": "Bilal",
+      "correct": true
+    },
+    {
+      "expected": "Freya",
+      "completion": "Mateo\n\nThe following table shows the number of students in",
+      "correct": false
+    },
+    {
+      "expected": "Gita",
+      "completion": "1",
+      "correct": false
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Freya",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus",
+      "completion": "Mateo mentors Bilal. \n\nIf you begin with Mate",
+      "correct": false
+    },
+    {
+      "expected": "Kofi",
+      "completion": "1",
+      "correct": false
+    }
+  ]
+}

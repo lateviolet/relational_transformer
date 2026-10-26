@@ -1,0 +1,91 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed1",
+  "data": "./nlp_pair_data/test_r32.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "examples": 128,
+  "accuracy": 1.0,
+  "samples": [
+    {
+      "expected": "Omar, Victor",
+      "completion": "Omar, Victor",
+      "correct": true
+    },
+    {
+      "expected": "Hassan, Jasper",
+      "completion": "Hassan, Jasper",
+      "correct": true
+    },
+    {
+      "expected": "Hana, Lucia",
+      "completion": "Hana, Lucia",
+      "correct": true
+    },
+    {
+      "expected": "Talia, Mina",
+      "completion": "Talia, Mina",
+      "correct": true
+    },
+    {
+      "expected": "Mateo, Mina",
+      "completion": "Mateo, Mina",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Teo",
+      "completion": "Nikolai, Teo",
+      "correct": true
+    },
+    {
+      "expected": "Daria, Victor",
+      "completion": "Daria, Victor",
+      "correct": true
+    },
+    {
+      "expected": "Talia, Zoe",
+      "completion": "Talia, Zoe",
+      "correct": true
+    },
+    {
+      "expected": "Nadir, Idris",
+      "completion": "Nadir, Idris",
+      "correct": true
+    },
+    {
+      "expected": "Cesar, Eitan",
+      "completion": "Cesar, Eitan",
+      "correct": true
+    },
+    {
+      "expected": "Cesar, Hassan",
+      "completion": "Cesar, Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Rhea",
+      "completion": "Nikolai, Rhea",
+      "correct": true
+    },
+    {
+      "expected": "Fiona, Helena",
+      "completion": "Fiona, Helena",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus, Victor",
+      "completion": "Cyrus, Victor",
+      "correct": true
+    },
+    {
+      "expected": "Pavel, Rhea",
+      "completion": "Pavel, Rhea",
+      "correct": true
+    },
+    {
+      "expected": "Gideon, Mina",
+      "completion": "Gideon, Mina",
+      "correct": true
+    }
+  ]
+}

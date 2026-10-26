@@ -1,0 +1,138 @@
+{
+  "task": "cued_two_hop",
+  "num_nodes": 12,
+  "edge_count": 3,
+  "num_relations": 2,
+  "hops": 2,
+  "d_model": 128,
+  "max_length": 64,
+  "layers": 2,
+  "heads": 2,
+  "mlp": true,
+  "position_mode": "learned",
+  "steps": 5000,
+  "batch_size": 128,
+  "lr": 0.001,
+  "seed": 0,
+  "train_edge_counts": [
+    3
+  ],
+  "device": "cuda",
+  "gpu_name": "NVIDIA A40",
+  "gpu_total_memory": 47697690624,
+  "gpu_uuid": "9b4c81a1-e719-cc3f-315d-4a294bf88f5c",
+  "elapsed_seconds": 76.009,
+  "final_accuracy": 0.994384765625,
+  "eval_by_edge_count": {
+    "3": 0.9935302734375,
+    "4": 0.60693359375,
+    "5": 0.4251708984375
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 2.5193557739257812,
+      "eval_accuracy": 0.0772705078125
+    },
+    {
+      "step": 250,
+      "loss": 1.25856614112854,
+      "eval_accuracy": 0.3338623046875
+    },
+    {
+      "step": 500,
+      "loss": 0.9569084644317627,
+      "eval_accuracy": 0.49951171875
+    },
+    {
+      "step": 750,
+      "loss": 0.8804572224617004,
+      "eval_accuracy": 0.50830078125
+    },
+    {
+      "step": 1000,
+      "loss": 0.4899309575557709,
+      "eval_accuracy": 0.7967529296875
+    },
+    {
+      "step": 1250,
+      "loss": 0.2117888182401657,
+      "eval_accuracy": 0.9342041015625
+    },
+    {
+      "step": 1500,
+      "loss": 0.09831710159778595,
+      "eval_accuracy": 0.9599609375
+    },
+    {
+      "step": 1750,
+      "loss": 0.12385862320661545,
+      "eval_accuracy": 0.9710693359375
+    },
+    {
+      "step": 2000,
+      "loss": 0.04380849003791809,
+      "eval_accuracy": 0.975341796875
+    },
+    {
+      "step": 2250,
+      "loss": 0.10206117480993271,
+      "eval_accuracy": 0.979248046875
+    },
+    {
+      "step": 2500,
+      "loss": 0.08017295598983765,
+      "eval_accuracy": 0.980712890625
+    },
+    {
+      "step": 2750,
+      "loss": 0.0115703996270895,
+      "eval_accuracy": 0.9774169921875
+    },
+    {
+      "step": 3000,
+      "loss": 0.08663348853588104,
+      "eval_accuracy": 0.9873046875
+    },
+    {
+      "step": 3250,
+      "loss": 0.022737892344594002,
+      "eval_accuracy": 0.983154296875
+    },
+    {
+      "step": 3500,
+      "loss": 0.05049440637230873,
+      "eval_accuracy": 0.984130859375
+    },
+    {
+      "step": 3750,
+      "loss": 0.018312539905309677,
+      "eval_accuracy": 0.9908447265625
+    },
+    {
+      "step": 4000,
+      "loss": 0.01545233465731144,
+      "eval_accuracy": 0.9912109375
+    },
+    {
+      "step": 4250,
+      "loss": 0.1173645406961441,
+      "eval_accuracy": 0.9912109375
+    },
+    {
+      "step": 4500,
+      "loss": 0.004335261881351471,
+      "eval_accuracy": 0.99267578125
+    },
+    {
+      "step": 4750,
+      "loss": 0.017325343564152718,
+      "eval_accuracy": 0.9949951171875
+    },
+    {
+      "step": 5000,
+      "loss": 0.0016375230625271797,
+      "eval_accuracy": 0.994384765625
+    }
+  ]
+}

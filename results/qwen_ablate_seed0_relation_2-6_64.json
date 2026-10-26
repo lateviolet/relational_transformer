@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_unseen_relation.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 2,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0625,
+  "samples": [
+    {
+      "expected": "Teo, Selin",
+      "completion": "Freila, Selina\n\nNadir, Valia",
+      "correct": false
+    },
+    {
+      "expected": "Leila, Kalani",
+      "completion": "Leila, Kalni\n\nOrla, Nikolai",
+      "correct": false
+    },
+    {
+      "expected": "Dalia, Rami",
+      "completion": "Dalia, Rami",
+      "correct": true
+    },
+    {
+      "expected": "Cesar, Freya",
+      "completion": "Cesar, Freya\n\nIn the same order, separated by a comma, the same order, separated by a comma",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Yusuf",
+      "completion": "Zara, Selin, Cyrus,",
+      "correct": false
+    },
+    {
+      "expected": "Zara, Leila",
+      "completion": "Zara, Orla\n\nIn the same order, separated by a comma, the same order, separated by a",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Amara",
+      "completion": "Zara, Ines",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Cesar",
+      "completion": "Valeria, Cesar",
+      "correct": true
+    },
+    {
+      "expected": "Orla, Amara",
+      "completion": "Orla, Mina",
+      "correct": false
+    },
+    {
+      "expected": "Yosef, Hassan",
+      "completion": "Yosef, Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Gustav",
+      "completion": "Opal, Gasta\n\nRia, Gasta, Frezza, Gasta, Gasta, Gasta,",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Rafael",
+      "completion": "Zara, Ulyana\n\nZara, Ulyana",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Tariq",
+      "completion": "Cesar, Freza\n\nQuestion: Following direct \"supervises\" links, who are the direct supervisees of",
+      "correct": false
+    },
+    {
+      "expected": "Freya, Avery",
+      "completion": "Freya, Avery\n\nQuestion: Following direct \"supervises\" links, who are the direct supervisees of Sam",
+      "correct": false
+    },
+    {
+      "expected": "Imani, Opal",
+      "completion": "Imani, Cesar",
+      "correct": false
+    },
+    {
+      "expected": "Rami, Uma",
+      "completion": "R, C\n\nInes, Yosef, Mira,",
+      "correct": false
+    }
+  ]
+}

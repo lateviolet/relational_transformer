@@ -1,0 +1,89 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "",
+  "data": "./nlp_data/valid_id.jsonl",
+  "examples": 32,
+  "accuracy": 0.28125,
+  "samples": [
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Sofia\n\nThe following table shows the number of students in each",
+      "correct": false
+    },
+    {
+      "expected": "Freya",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Bilal",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Amara",
+      "completion": "Freya\n\nWhat is the name of the person who is",
+      "correct": false
+    },
+    {
+      "expected": "Mateo",
+      "completion": "Gita",
+      "correct": false
+    },
+    {
+      "expected": "Gideon",
+      "completion": "Gita",
+      "correct": false
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia\n\nThe following table shows the number of students in each",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Kofi",
+      "completion": "Ines",
+      "correct": false
+    },
+    {
+      "expected": "Kofi",
+      "completion": "Cyrus\n\nWhat is the name of the person who is the",
+      "correct": false
+    },
+    {
+      "expected": "Victor",
+      "completion": "1",
+      "correct": false
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Noor",
+      "completion": "In this exercise, we are given a set of facts about",
+      "correct": false
+    },
+    {
+      "expected": "Dalia",
+      "completion": "Gita",
+      "correct": false
+    }
+  ]
+}

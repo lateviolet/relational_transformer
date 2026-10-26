@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed2",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.125,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Nikolai",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Willa, Idris",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Vikram, Selin",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Kofi",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Yusuf, Talia",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Rafael, Omar",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Priya",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Fiona, Hassan",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Keiko, Zoe",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Jasper, Gita",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Valeria, Zoya",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Eitan, Jasper",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Cyrus, Vikram",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Mira, Winston",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Talia, Yosef",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Amara, Mateo",
+      "correct": false
+    }
+  ]
+}

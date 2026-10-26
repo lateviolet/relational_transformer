@@ -1,0 +1,90 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "",
+  "data": "./nlp_data_v2/test_more_distractors.jsonl",
+  "prompt_field": "prompt",
+  "examples": 128,
+  "accuracy": 0.109375,
+  "samples": [
+    {
+      "expected": "Kofi",
+      "completion": "Bilal reports to Amara. Amara reports to K",
+      "correct": false
+    },
+    {
+      "expected": "Uma",
+      "completion": "Cyrus\n\nThe following table shows the number of students in each",
+      "correct": false
+    },
+    {
+      "expected": "Mateo",
+      "completion": "Freya",
+      "correct": false
+    },
+    {
+      "expected": "Ines",
+      "completion": "Ines",
+      "correct": true
+    },
+    {
+      "expected": "Zoya",
+      "completion": "Sofia\n\nWhat is the name of the person who is the",
+      "correct": false
+    },
+    {
+      "expected": "Rafael",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Mateo",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Mateo",
+      "completion": "Sofia\n\nWhat is the name of the person who is the",
+      "correct": false
+    },
+    {
+      "expected": "Noor",
+      "completion": "1",
+      "correct": false
+    },
+    {
+      "expected": "Freya",
+      "completion": "Starting at Cyrus, follow exactly two \"mentors\" links",
+      "correct": false
+    },
+    {
+      "expected": "Jae",
+      "completion": "Yuki\n\nWhat is the name of the person who is",
+      "correct": false
+    },
+    {
+      "expected": "Kofi",
+      "completion": "1",
+      "correct": false
+    },
+    {
+      "expected": "Rafael",
+      "completion": "Starting at Lucia, follow exactly two \"mentors\" links",
+      "correct": false
+    },
+    {
+      "expected": "Tariq",
+      "completion": "Sofia\n\nThe following table shows the number of students in each",
+      "correct": false
+    },
+    {
+      "expected": "Rafael",
+      "completion": "1",
+      "correct": false
+    },
+    {
+      "expected": "Victor",
+      "completion": "Gideon mentors Hassan. Hassan mentors Victor.",
+      "correct": true
+    }
+  ]
+}

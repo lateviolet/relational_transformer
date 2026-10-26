@@ -1,0 +1,238 @@
+{
+  "task": "cued_nhop",
+  "num_nodes": 16,
+  "edge_count": 5,
+  "num_relations": 2,
+  "hops": 4,
+  "d_model": 128,
+  "max_length": 64,
+  "layers": 3,
+  "heads": 2,
+  "mlp": true,
+  "position_mode": "learned",
+  "steps": 7000,
+  "batch_size": 128,
+  "lr": 0.001,
+  "seed": 3,
+  "train_edge_counts": [
+    5
+  ],
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "gpu_total_memory": 25438126080,
+  "gpu_uuid": "redacted",
+  "elapsed_seconds": 166.206,
+  "final_accuracy": 0.5205078125,
+  "eval_by_edge_count": {
+    "5": {
+      "accuracy": 0.514404296875,
+      "secondary_accuracy": 0.514404296875,
+      "joint_accuracy": 0.514404296875
+    }
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 2.809363603591919,
+      "accuracy": 0.06787109375,
+      "secondary_accuracy": 0.06787109375,
+      "joint_accuracy": 0.06787109375
+    },
+    {
+      "step": 250,
+      "loss": 1.9224780797958374,
+      "accuracy": 0.193603515625,
+      "secondary_accuracy": 0.193603515625,
+      "joint_accuracy": 0.193603515625
+    },
+    {
+      "step": 500,
+      "loss": 1.6838254928588867,
+      "accuracy": 0.3048095703125,
+      "secondary_accuracy": 0.3048095703125,
+      "joint_accuracy": 0.3048095703125
+    },
+    {
+      "step": 750,
+      "loss": 1.1211422681808472,
+      "accuracy": 0.4814453125,
+      "secondary_accuracy": 0.4814453125,
+      "joint_accuracy": 0.4814453125
+    },
+    {
+      "step": 1000,
+      "loss": 1.039262294769287,
+      "accuracy": 0.4830322265625,
+      "secondary_accuracy": 0.4830322265625,
+      "joint_accuracy": 0.4830322265625
+    },
+    {
+      "step": 1250,
+      "loss": 0.9376791715621948,
+      "accuracy": 0.4896240234375,
+      "secondary_accuracy": 0.4896240234375,
+      "joint_accuracy": 0.4896240234375
+    },
+    {
+      "step": 1500,
+      "loss": 0.8300125002861023,
+      "accuracy": 0.489501953125,
+      "secondary_accuracy": 0.489501953125,
+      "joint_accuracy": 0.489501953125
+    },
+    {
+      "step": 1750,
+      "loss": 0.8649689555168152,
+      "accuracy": 0.4833984375,
+      "secondary_accuracy": 0.4833984375,
+      "joint_accuracy": 0.4833984375
+    },
+    {
+      "step": 2000,
+      "loss": 0.8612372279167175,
+      "accuracy": 0.49365234375,
+      "secondary_accuracy": 0.49365234375,
+      "joint_accuracy": 0.49365234375
+    },
+    {
+      "step": 2250,
+      "loss": 0.8748521208763123,
+      "accuracy": 0.4935302734375,
+      "secondary_accuracy": 0.4935302734375,
+      "joint_accuracy": 0.4935302734375
+    },
+    {
+      "step": 2500,
+      "loss": 0.7520854473114014,
+      "accuracy": 0.496337890625,
+      "secondary_accuracy": 0.496337890625,
+      "joint_accuracy": 0.496337890625
+    },
+    {
+      "step": 2750,
+      "loss": 0.7806984782218933,
+      "accuracy": 0.499267578125,
+      "secondary_accuracy": 0.499267578125,
+      "joint_accuracy": 0.499267578125
+    },
+    {
+      "step": 3000,
+      "loss": 0.8177334070205688,
+      "accuracy": 0.507568359375,
+      "secondary_accuracy": 0.507568359375,
+      "joint_accuracy": 0.507568359375
+    },
+    {
+      "step": 3250,
+      "loss": 0.9138270616531372,
+      "accuracy": 0.4986572265625,
+      "secondary_accuracy": 0.4986572265625,
+      "joint_accuracy": 0.4986572265625
+    },
+    {
+      "step": 3500,
+      "loss": 0.8348795771598816,
+      "accuracy": 0.5010986328125,
+      "secondary_accuracy": 0.5010986328125,
+      "joint_accuracy": 0.5010986328125
+    },
+    {
+      "step": 3750,
+      "loss": 0.8494561314582825,
+      "accuracy": 0.4898681640625,
+      "secondary_accuracy": 0.4898681640625,
+      "joint_accuracy": 0.4898681640625
+    },
+    {
+      "step": 4000,
+      "loss": 0.7652084231376648,
+      "accuracy": 0.5023193359375,
+      "secondary_accuracy": 0.5023193359375,
+      "joint_accuracy": 0.5023193359375
+    },
+    {
+      "step": 4250,
+      "loss": 0.8071983456611633,
+      "accuracy": 0.512939453125,
+      "secondary_accuracy": 0.512939453125,
+      "joint_accuracy": 0.512939453125
+    },
+    {
+      "step": 4500,
+      "loss": 0.7659550309181213,
+      "accuracy": 0.5089111328125,
+      "secondary_accuracy": 0.5089111328125,
+      "joint_accuracy": 0.5089111328125
+    },
+    {
+      "step": 4750,
+      "loss": 0.8283265233039856,
+      "accuracy": 0.497802734375,
+      "secondary_accuracy": 0.497802734375,
+      "joint_accuracy": 0.497802734375
+    },
+    {
+      "step": 5000,
+      "loss": 0.8165919184684753,
+      "accuracy": 0.5093994140625,
+      "secondary_accuracy": 0.5093994140625,
+      "joint_accuracy": 0.5093994140625
+    },
+    {
+      "step": 5250,
+      "loss": 0.7436751127243042,
+      "accuracy": 0.50146484375,
+      "secondary_accuracy": 0.50146484375,
+      "joint_accuracy": 0.50146484375
+    },
+    {
+      "step": 5500,
+      "loss": 0.7684870362281799,
+      "accuracy": 0.51318359375,
+      "secondary_accuracy": 0.51318359375,
+      "joint_accuracy": 0.51318359375
+    },
+    {
+      "step": 5750,
+      "loss": 0.7386907339096069,
+      "accuracy": 0.495361328125,
+      "secondary_accuracy": 0.495361328125,
+      "joint_accuracy": 0.495361328125
+    },
+    {
+      "step": 6000,
+      "loss": 0.722568690776825,
+      "accuracy": 0.51416015625,
+      "secondary_accuracy": 0.51416015625,
+      "joint_accuracy": 0.51416015625
+    },
+    {
+      "step": 6250,
+      "loss": 0.7687177062034607,
+      "accuracy": 0.5152587890625,
+      "secondary_accuracy": 0.5152587890625,
+      "joint_accuracy": 0.5152587890625
+    },
+    {
+      "step": 6500,
+      "loss": 0.7464571595191956,
+      "accuracy": 0.507568359375,
+      "secondary_accuracy": 0.507568359375,
+      "joint_accuracy": 0.507568359375
+    },
+    {
+      "step": 6750,
+      "loss": 0.8038191199302673,
+      "accuracy": 0.5185546875,
+      "secondary_accuracy": 0.5185546875,
+      "joint_accuracy": 0.5185546875
+    },
+    {
+      "step": 7000,
+      "loss": 0.7513557076454163,
+      "accuracy": 0.5205078125,
+      "secondary_accuracy": 0.5205078125,
+      "joint_accuracy": 0.5205078125
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "clean_answer_1": 1.0,
+  "clean_answer_2": 1.0,
+  "clean_joint": 1.0,
+  "query_swap_joint": 1.0,
+  "attention_by_head": [
+    {
+      "head": 0,
+      "mass_on_answer_1_record": 0.9772081971168518,
+      "mass_on_answer_2_record": 0.0019992319867014885,
+      "top1_answer_1_record": 1.0,
+      "top1_answer_2_record": 0.0
+    },
+    {
+      "head": 1,
+      "mass_on_answer_1_record": 0.002305423840880394,
+      "mass_on_answer_2_record": 0.9752357602119446,
+      "top1_answer_1_record": 0.0,
+      "top1_answer_2_record": 1.0
+    }
+  ],
+  "head_ablation": [
+    {
+      "head": 0,
+      "answer_1_accuracy": 0.01953125,
+      "answer_2_accuracy": 1.0,
+      "joint_accuracy": 0.01953125
+    },
+    {
+      "head": 1,
+      "answer_1_accuracy": 1.0,
+      "answer_2_accuracy": 0.00390625,
+      "joint_accuracy": 0.00390625
+    }
+  ]
+}

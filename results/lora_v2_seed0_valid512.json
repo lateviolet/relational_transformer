@@ -1,0 +1,90 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_two_hop_v2_seed0",
+  "data": "./nlp_data_v2/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "examples": 512,
+  "accuracy": 0.99609375,
+  "samples": [
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Amara",
+      "completion": "Amara",
+      "correct": true
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Amara",
+      "completion": "Amara",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Lucia",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Ines",
+      "completion": "Ines",
+      "correct": true
+    },
+    {
+      "expected": "Kofi",
+      "completion": "Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Bilal",
+      "completion": "Bilal",
+      "correct": true
+    },
+    {
+      "expected": "Freya",
+      "completion": "Freya",
+      "correct": true
+    },
+    {
+      "expected": "Gita",
+      "completion": "Gita",
+      "correct": true
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus",
+      "completion": "Cyrus",
+      "correct": true
+    },
+    {
+      "expected": "Kofi",
+      "completion": "Kofi",
+      "correct": true
+    }
+  ]
+}

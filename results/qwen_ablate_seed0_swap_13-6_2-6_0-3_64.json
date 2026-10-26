@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_query_swap.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Kalani, Opal",
+      "completion": "this is is is is is is is is is is is is is is is is is is is is is is is",
+      "correct": false
+    },
+    {
+      "expected": "Nadir, Talia",
+      "completion": ",order,answerordernameordernameordernameordernameordernameordernameordernameordernameordernameordername",
+      "correct": false
+    },
+    {
+      "expected": "Helena, Daria",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Willa, Rami",
+      "completion": "at sameaaaaaaaaaaaaaaaaaaaaaa",
+      "correct": false
+    },
+    {
+      "expected": "Rhea, Priya",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Leila, Jasper",
+      "completion": ",iOrmanimIOrmanimIOrmanimIOrmanimIOrmanimIOrman",
+      "correct": false
+    },
+    {
+      "expected": "Orla, Mira",
+      "completion": "at same order, different names, at same order, different names, at same order, different names, at same order",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": ",order,imorreimorreimorreimorreimorreimoreimoreimore",
+      "correct": false
+    },
+    {
+      "expected": "Ines, Uma",
+      "completion": "Samim, Idris, Kifos, Zoya, Cesar, Idris, Kifos",
+      "correct": false
+    },
+    {
+      "expected": "Gustav, Willa",
+      "completion": "\"iman\" gikor\" tatia\" tatia\" kifgikor\" tatia\" k",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gideon",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Bilal",
+      "completion": "\" Winston report\" Tariq.\n Question.\n Question, Question, Question, Question, Question, Question, Question,",
+      "correct": false
+    },
+    {
+      "expected": "Helena, Ulyana",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Avery, Rhea",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Zoe",
+      "completion": "samime\r\nimei\r\nimei samime\r\n samime\r\n samime\r\n samime\r\n samime\r\n sam",
+      "correct": false
+    }
+  ]
+}

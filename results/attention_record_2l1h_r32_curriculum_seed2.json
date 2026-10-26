@@ -1,0 +1,23 @@
+{
+  "clean_answer_1": 0.990234375,
+  "clean_answer_2": 1.0,
+  "clean_joint": 0.990234375,
+  "query_swap_joint": 0.990234375,
+  "attention_by_head": [
+    {
+      "head": 0,
+      "mass_on_answer_1_record": 0.0018451623618602753,
+      "mass_on_answer_2_record": 0.9400397539138794,
+      "top1_answer_1_record": 0.0,
+      "top1_answer_2_record": 1.0
+    }
+  ],
+  "head_ablation": [
+    {
+      "head": 0,
+      "answer_1_accuracy": 0.005859375,
+      "answer_2_accuracy": 0.00390625,
+      "joint_accuracy": 0.0
+    }
+  ]
+}

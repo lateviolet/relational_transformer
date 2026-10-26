@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Parallel 2L-2H",
+    "checkpoint": "./checkpoints/record_2l2h_r32.pt",
+    "examples": 512,
+    "num_queries": 2,
+    "layers": [
+      [
+        {
+          "head": 0,
+          "answer_masses": [
+            8.977034303825349e-05,
+            0.99599689245224
+          ],
+          "other_mass": 0.003913337204721756,
+          "top1_rates": [
+            0.0,
+            1.0
+          ],
+          "entropy": 0.027200713753700256
+        },
+        {
+          "head": 1,
+          "answer_masses": [
+            0.9982591867446899,
+            8.644579793326557e-05
+          ],
+          "other_mass": 0.001654367457376793,
+          "top1_rates": [
+            1.0,
+            0.0
+          ],
+          "entropy": 0.012125310488045216
+        }
+      ],
+      [
+        {
+          "head": 0,
+          "answer_masses": [
+            0.027052346616983414,
+            0.03580272197723389
+          ],
+          "other_mass": 0.9371449314057827,
+          "top1_rates": [
+            0.025390625,
+            0.03515625
+          ],
+          "entropy": 0.6254140734672546
+        },
+        {
+          "head": 1,
+          "answer_masses": [
+            0.01513260044157505,
+            0.04313800483942032
+          ],
+          "other_mass": 0.9417293947190046,
+          "top1_rates": [
+            0.015625,
+            0.04296875
+          ],
+          "entropy": 0.27686914801597595
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Serial 2L-1H",
+    "checkpoint": "./checkpoints/record_2l1h_r32_curriculum_seed2.pt",
+    "examples": 512,
+    "num_queries": 2,
+    "layers": [
+      [
+        {
+          "head": 0,
+          "answer_masses": [
+            0.0018451623618602753,
+            0.9400397539138794
+          ],
+          "other_mass": 0.05811508372426033,
+          "top1_rates": [
+            0.0,
+            1.0
+          ],
+          "entropy": 0.3228149712085724
+        }
+      ],
+      [
+        {
+          "head": 0,
+          "answer_masses": [
+            0.9526221752166748,
+            0.003087237011641264
+          ],
+          "other_mass": 0.04429058777168393,
+          "top1_rates": [
+            0.9921875,
+            0.0
+          ],
+          "entropy": 0.14624297618865967
+        }
+      ]
+    ]
+  },
+  {
+    "name": "One head 1L-1H",
+    "checkpoint": "./checkpoints/record_1l1h_r32_curriculum_seed3.pt",
+    "examples": 512,
+    "num_queries": 2,
+    "layers": [
+      [
+        {
+          "head": 0,
+          "answer_masses": [
+            0.5821866989135742,
+            0.2431560456752777
+          ],
+          "other_mass": 0.17465725541114807,
+          "top1_rates": [
+            0.994140625,
+            0.005859375
+          ],
+          "entropy": 1.209940791130066
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Failed 2L-2H",
+    "checkpoint": "./checkpoints/record_2l2h_r32_failedseed6.pt",
+    "examples": 512,
+    "num_queries": 2,
+    "layers": [
+      [
+        {
+          "head": 0,
+          "answer_masses": [
+            0.9962145686149597,
+            7.739534339634702e-05
+          ],
+          "other_mass": 0.003708036041643936,
+          "top1_rates": [
+            1.0,
+            0.0
+          ],
+          "entropy": 0.01988307014107704
+        },
+        {
+          "head": 1,
+          "answer_masses": [
+            0.9958816170692444,
+            7.608674059156328e-05
+          ],
+          "other_mass": 0.004042296190164052,
+          "top1_rates": [
+            1.0,
+            0.0
+          ],
+          "entropy": 0.024213004857301712
+        }
+      ],
+      [
+        {
+          "head": 0,
+          "answer_masses": [
+            0.021237660199403763,
+            0.050011783838272095
+          ],
+          "other_mass": 0.9287505559623241,
+          "top1_rates": [
+            0.01953125,
+            0.05078125
+          ],
+          "entropy": 0.08064322173595428
+        },
+        {
+          "head": 1,
+          "answer_masses": [
+            0.007957404479384422,
+            0.03713792935013771
+          ],
+          "other_mass": 0.9549046661704779,
+          "top1_rates": [
+            0.005859375,
+            0.037109375
+          ],
+          "entropy": 0.08125760406255722
+        }
+      ]
+    ]
+  }
+]

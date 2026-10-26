@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_unseen_templates.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Cesar, Willa",
+      "completion": "Minaa the direct report target noor and Helenaa return only those two name this name this name this name this",
+      "correct": false
+    },
+    {
+      "expected": "Zara, Zoya",
+      "completion": "what name,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Jamal, Nikolai",
+      "completion": "the requested order.\n the requested order, the requested order, the requested order, the requested order, the requested order,",
+      "correct": false
+    },
+    {
+      "expected": "Willa, Eitan",
+      "completion": ",,firenqireqireqireqireqireqireqireqireqireqire",
+      "correct": false
+    },
+    {
+      "expected": "Priya, Kalani",
+      "completion": "dali\nfali\nfal\nfali\nfal\nfali\nfal\nfal\nfal\nfal",
+      "correct": false
+    },
+    {
+      "expected": "Yuki, Eitan",
+      "completion": "comma",
+      "correct": false
+    },
+    {
+      "expected": "Rami, Amara",
+      "completion": "Kofi Return only those two name,a Lui Ka Tuiiiiiiiiiiiiiiiiiii",
+      "correct": false
+    },
+    {
+      "expected": "Daria, Fiona",
+      "completion": "aimora,aimora,aimora,aimora,imora',imora',imora",
+      "correct": false
+    },
+    {
+      "expected": "Winston, Noor",
+      "completion": "Opal report: Dalia.\n Kfteyrmeinddmeinddmeinddmeind",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Kofi",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Kofi",
+      "completion": "Kofi\niuderfikbond\r\niudrefikbond\r\nindrefikbond\r\nindre",
+      "correct": false
+    },
+    {
+      "expected": "Imani, Emil",
+      "completion": ",,fimremissi,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Lucia, Amara",
+      "completion": "Nadir report TODO\r\nate mateimepeimomenetimeimomenetimeimomenetimeimomenet",
+      "correct": false
+    },
+    {
+      "expected": "Sami, Yusuf",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Yosef",
+      "completion": "the direct order, the direct order, the direct order\n the direct order\n the direct order\n the direct order",
+      "correct": false
+    },
+    {
+      "expected": "Jamal, Leila",
+      "completion": "whatindashel,i, whatwhatiswhatwhatwhatwhatwhatwhatwhatwhatwhatwhatwhatwhatwhatwhat",
+      "correct": false
+    }
+  ]
+}

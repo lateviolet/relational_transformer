@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_unseen_relation.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Teo, Selin",
+      "completion": "\"fricicicicicicicicicicicicicicicicicicicicicic",
+      "correct": false
+    },
+    {
+      "expected": "Leila, Kalani",
+      "completion": "what is is is is same order? same order? same order? same order? same order? same order? same",
+      "correct": false
+    },
+    {
+      "expected": "Dalia, Rami",
+      "completion": "Tamei give name \" Tamei give name \" Tamei give name \" Tamei give name \"",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Freya",
+      "completion": "linkafrerce linkfrerce linkfrerce linkfrerce linkfrerce linkfrerce linkfrce linkfr",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Yusuf",
+      "completion": "that compound give exactly two namesi compound give iusframericompound iusframericompound iusfr",
+      "correct": false
+    },
+    {
+      "expected": "Zara, Leila",
+      "completion": "\"respect\" same order\" same\" same\" same\" same\" same\" same\" same\" same\" same\"",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Amara",
+      "completion": "that same order, separated by by a comma. answer, that same order, separated by by commaa answeryield",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Cesar",
+      "completion": "????????????????????????",
+      "correct": false
+    },
+    {
+      "expected": "Orla, Amara",
+      "completion": "what is ifr? ifr? ifr? ifr? ifr? ifr? ifr? i",
+      "correct": false
+    },
+    {
+      "expected": "Yosef, Hassan",
+      "completion": "Ysanda, same order, separated by by by by by by by by by by by by by by by by",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Gustav",
+      "completion": "that which name is same order, that what what is is is is is is is is that is that it is that",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Rafael",
+      "completion": ",manca?selfi?a?a?a?a?a?a?a?a?,",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Tariq",
+      "completion": "that that that that that that that that that that that that that that thatthatthatthatthatthatthatthatthatthat",
+      "correct": false
+    },
+    {
+      "expected": "Freya, Avery",
+      "completion": "Tame sam i give I give I give I give I give I give I give I give I give I give I",
+      "correct": false
+    },
+    {
+      "expected": "Imani, Opal",
+      "completion": "\"Uymanaacaresfame\"caramindcaramindcaramindcaramindca",
+      "correct": false
+    },
+    {
+      "expected": "Rami, Uma",
+      "completion": "Tariat, link, respect? link?respect?respect?respect?respect?respect?respect?respect?respect",
+      "correct": false
+    }
+  ]
+}

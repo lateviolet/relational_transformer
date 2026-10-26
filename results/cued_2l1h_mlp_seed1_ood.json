@@ -1,0 +1,81 @@
+{
+  "task": "cued_two_hop",
+  "num_nodes": 12,
+  "edge_count": 3,
+  "d_model": 128,
+  "layers": 2,
+  "heads": 1,
+  "mlp": true,
+  "steps": 5000,
+  "batch_size": 128,
+  "lr": 0.001,
+  "seed": 1,
+  "device": "cuda",
+  "gpu_name": "NVIDIA A40",
+  "gpu_total_memory": 47697690624,
+  "gpu_uuid": "1f46d62a-7c3d-c583-c094-b224255bcf6b",
+  "elapsed_seconds": 67.803,
+  "final_accuracy": 0.5511474609375,
+  "eval_by_edge_count": {
+    "3": 0.5411376953125,
+    "4": 0.3507080078125,
+    "5": 0.21240234375
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 2.5461788177490234,
+      "eval_accuracy": 0.0806884765625
+    },
+    {
+      "step": 500,
+      "loss": 0.9677233695983887,
+      "eval_accuracy": 0.4814453125
+    },
+    {
+      "step": 1000,
+      "loss": 0.798869788646698,
+      "eval_accuracy": 0.490478515625
+    },
+    {
+      "step": 1500,
+      "loss": 0.7901425361633301,
+      "eval_accuracy": 0.50390625
+    },
+    {
+      "step": 2000,
+      "loss": 0.7581625580787659,
+      "eval_accuracy": 0.4937744140625
+    },
+    {
+      "step": 2500,
+      "loss": 0.7925300598144531,
+      "eval_accuracy": 0.5023193359375
+    },
+    {
+      "step": 3000,
+      "loss": 0.7573209404945374,
+      "eval_accuracy": 0.5042724609375
+    },
+    {
+      "step": 3500,
+      "loss": 0.7899563312530518,
+      "eval_accuracy": 0.5047607421875
+    },
+    {
+      "step": 4000,
+      "loss": 0.7430274486541748,
+      "eval_accuracy": 0.508544921875
+    },
+    {
+      "step": 4500,
+      "loss": 0.738398015499115,
+      "eval_accuracy": 0.531982421875
+    },
+    {
+      "step": 5000,
+      "loss": 0.6865208745002747,
+      "eval_accuracy": 0.5511474609375
+    }
+  ]
+}

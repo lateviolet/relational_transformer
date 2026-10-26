@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_r32.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 2,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.453125,
+  "samples": [
+    {
+      "expected": "Omar, Victor",
+      "completion": "Idris, Yuki, Wali, Ulay, Zara, Mira, Tariq, H",
+      "correct": false
+    },
+    {
+      "expected": "Hassan, Jasper",
+      "completion": "Hassan, Tariq",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Lucia",
+      "completion": "Hana, Lucia",
+      "correct": true
+    },
+    {
+      "expected": "Talia, Mina",
+      "completion": "Kar, Pavel, Mina, Kofi, Gideon, Cesar, Zara, Zara, Zara",
+      "correct": false
+    },
+    {
+      "expected": "Mateo, Mina",
+      "completion": "Opal, Mina",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Teo",
+      "completion": "Nikolai, Teo",
+      "correct": true
+    },
+    {
+      "expected": "Daria, Victor",
+      "completion": "Bilal, Ulyana, in that order.\nName: Bilal, Name: Ulyana, Name:",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Zoe",
+      "completion": "Talia, Zoe",
+      "correct": true
+    },
+    {
+      "expected": "Nadir, Idris",
+      "completion": "Nadir, Idris",
+      "correct": true
+    },
+    {
+      "expected": "Cesar, Eitan",
+      "completion": "Sami, Eitan, Opal, Dalia, Opal, Dalia, Opal, Dalia,",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Hassan",
+      "completion": "Cesar, Freya",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Rhea",
+      "completion": "Nikolai, Rhea",
+      "correct": true
+    },
+    {
+      "expected": "Fiona, Helena",
+      "completion": "Cyrus, Amara, in that order.\nExplanation: The two names with a comma are Cyrus and Amara, in",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Victor",
+      "completion": "I, N, E, T, E, T, E, T, E, T, E, T,",
+      "correct": false
+    },
+    {
+      "expected": "Pavel, Rhea",
+      "completion": "Pavel, Rhea",
+      "correct": true
+    },
+    {
+      "expected": "Gideon, Mina",
+      "completion": "Rhea, Yuki, Tari, Teo, Ulay, Teo, Iman, Iman,",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_two_hop_v2_seed0",
+  "data": "./nlp_data_v2/test_16_distractors.jsonl",
+  "prompt_field": "prompt",
+  "examples": 512,
+  "accuracy": 0.994140625,
+  "samples": [
+    {
+      "expected": "Hassan",
+      "completion": "Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Freya",
+      "completion": "Freya",
+      "correct": true
+    },
+    {
+      "expected": "Priya",
+      "completion": "Priya",
+      "correct": true
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Lucia",
+      "correct": true
+    },
+    {
+      "expected": "Willa",
+      "completion": "Willa",
+      "correct": true
+    },
+    {
+      "expected": "Yusuf",
+      "completion": "Yusuf",
+      "correct": true
+    },
+    {
+      "expected": "Gita",
+      "completion": "Gita",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus",
+      "completion": "Cyrus",
+      "correct": true
+    },
+    {
+      "expected": "Yusuf",
+      "completion": "Yusuf",
+      "correct": true
+    },
+    {
+      "expected": "Jae",
+      "completion": "Jae",
+      "correct": true
+    },
+    {
+      "expected": "Priya",
+      "completion": "Priya",
+      "correct": true
+    },
+    {
+      "expected": "Uma",
+      "completion": "Uma",
+      "correct": true
+    },
+    {
+      "expected": "Leila",
+      "completion": "Leila",
+      "correct": true
+    },
+    {
+      "expected": "Amara",
+      "completion": "Amara",
+      "correct": true
+    },
+    {
+      "expected": "Jae",
+      "completion": "Jae",
+      "correct": true
+    },
+    {
+      "expected": "Tariq",
+      "completion": "Tariq",
+      "correct": true
+    }
+  ]
+}

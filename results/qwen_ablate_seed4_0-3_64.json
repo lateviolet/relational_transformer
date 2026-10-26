@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed4",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.34375,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Jae",
+      "correct": true
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Daria,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": ", Nadir, Zoya",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Gustav",
+      "correct": true
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Yusuf,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Nikolai, Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Rafael",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Hassan, Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Hana, Zoe",
+      "correct": true
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Mira, Gita",
+      "correct": true
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Zoya, Imani",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": ",,",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Jae",
+      "correct": true
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Mira,,",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": ":,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Amara, Talia",
+      "correct": true
+    }
+  ]
+}

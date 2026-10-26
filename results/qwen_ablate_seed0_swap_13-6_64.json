@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_query_swap.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.28125,
+  "samples": [
+    {
+      "expected": "Kalani, Opal",
+      "completion": "Cyrus, Kofi",
+      "correct": false
+    },
+    {
+      "expected": "Nadir, Talia",
+      "completion": "Yusuf, Talia",
+      "correct": false
+    },
+    {
+      "expected": "Helena, Daria",
+      "completion": "Gita, Daria",
+      "correct": false
+    },
+    {
+      "expected": "Willa, Rami",
+      "completion": "Mateo, Rami",
+      "correct": false
+    },
+    {
+      "expected": "Rhea, Priya",
+      "completion": "Rhea, Priya",
+      "correct": true
+    },
+    {
+      "expected": "Leila, Jasper",
+      "completion": "Gideon, Dalia",
+      "correct": false
+    },
+    {
+      "expected": "Orla, Mira",
+      "completion": "Priya, Imani",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": "Cyrus, Gideon",
+      "correct": false
+    },
+    {
+      "expected": "Ines, Uma",
+      "completion": "Gideon, Uma",
+      "correct": false
+    },
+    {
+      "expected": "Gustav, Willa",
+      "completion": "Gustav, Willa",
+      "correct": true
+    },
+    {
+      "expected": "Rafael, Gideon",
+      "completion": "Rafael, Gideon",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": "Nikolai, Talia",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Bilal",
+      "completion": "Hana, Bilal",
+      "correct": true
+    },
+    {
+      "expected": "Helena, Ulyana",
+      "completion": "Helena, Cesar",
+      "correct": false
+    },
+    {
+      "expected": "Avery, Rhea",
+      "completion": "Cesar, Rhea",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Zoe",
+      "completion": "Leila, Mira",
+      "correct": false
+    }
+  ]
+}

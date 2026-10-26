@@ -1,0 +1,101 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 128,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Talia",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Will,,\n,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Vikram, Mina",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Jasper",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Leila\n,",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Kofi",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana,,,",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Hassan",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Hana, Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Mira, Winston",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Selin",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Kofi, Kalani",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Vikram, Tariq",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Jasper, Yuki",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Kalani, Talia, Keiko",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Mate,,,",
+      "correct": false
+    }
+  ]
+}

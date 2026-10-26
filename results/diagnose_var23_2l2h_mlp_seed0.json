@@ -1,0 +1,77 @@
+{
+  "examples": 512,
+  "final_accuracy": 0.99609375,
+  "final_prediction_matches_intermediate": 0.0,
+  "layer_logit_lens": [
+    {
+      "layer": 0,
+      "query_predicts_intermediate": 0.0859375,
+      "final_predicts_answer": 0.328125
+    },
+    {
+      "layer": 1,
+      "query_predicts_intermediate": 0.0,
+      "final_predicts_answer": 0.99609375
+    }
+  ],
+  "attention_to_hop_tokens": [
+    {
+      "layer": 0,
+      "head": 0,
+      "query_mass_on_first_value": 0.00591568648815155,
+      "query_top1_matches_first_value": 0.0,
+      "final_mass_on_second_value": 0.2700044512748718,
+      "final_top1_matches_second_value": 0.333984375
+    },
+    {
+      "layer": 0,
+      "head": 1,
+      "query_mass_on_first_value": 0.012866683304309845,
+      "query_top1_matches_first_value": 0.0,
+      "final_mass_on_second_value": 0.2677507996559143,
+      "final_top1_matches_second_value": 0.349609375
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "query_mass_on_first_value": 0.0012059761211276054,
+      "query_top1_matches_first_value": 0.0,
+      "final_mass_on_second_value": 0.00045380540541373193,
+      "final_top1_matches_second_value": 0.0
+    },
+    {
+      "layer": 1,
+      "head": 1,
+      "query_mass_on_first_value": 0.0047705406323075294,
+      "query_top1_matches_first_value": 0.00390625,
+      "final_mass_on_second_value": 0.0004996302304789424,
+      "final_top1_matches_second_value": 0.0
+    }
+  ],
+  "head_ablation": [
+    {
+      "layer": 0,
+      "head": 0,
+      "final_accuracy": 0.3359375,
+      "query_predicts_intermediate": 0.0859375
+    },
+    {
+      "layer": 0,
+      "head": 1,
+      "final_accuracy": 0.458984375,
+      "query_predicts_intermediate": 0.0859375
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "final_accuracy": 0.6171875,
+      "query_predicts_intermediate": 0.033203125
+    },
+    {
+      "layer": 1,
+      "head": 1,
+      "final_accuracy": 0.6015625,
+      "query_predicts_intermediate": 0.037109375
+    }
+  ]
+}

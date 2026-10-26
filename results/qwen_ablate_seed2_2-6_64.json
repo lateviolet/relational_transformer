@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed2",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 2,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.390625,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Opal, Jain, Rhea, Orla, Lina, Lina, Lina",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Idris, Noor",
+      "correct": true
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Direct: Error: Error: Error: Error: Error: ... ... ... ... ... ... ... ... ... ... ... ...",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Fadir\nQuestion: Following direct \"reports to\" links, what are the report targets of Willa",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Yusuf, Jasper",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "In, O, P, U, P, U, P, U, P, U, P, U,",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Rafael",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Opal, Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Direct: For: Lito, Hana.",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Mira, Gita\n\nIn the same order, give exactly two names in the same order, separated by a comma",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Valeria, Petra",
+      "correct": true
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Direct: Report: Target: Pari, Kalendi, Aver, Pavel, Yosef, Sif,",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Zoya\n\nExplanation:\n\nExplanation:\n\nExplanation:\n\nExplanation:\n\nExplanation:\n\nExplanation:\n\nExplanation:\n\nExplanation:\n\nExplanation:",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Mira, Helena",
+      "correct": true
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Gideon, Imani, Yosef, Tariq, Hana, Nariq, Riku,",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Amara, Talia\n\nIn the same order, separated by a comma, separated by a comma, separated by a",
+      "correct": false
+    }
+  ]
+}

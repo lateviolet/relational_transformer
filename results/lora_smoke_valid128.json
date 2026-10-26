@@ -1,0 +1,89 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_two_hop_smoke",
+  "data": "./nlp_data/valid_id.jsonl",
+  "examples": 128,
+  "accuracy": 1.0,
+  "samples": [
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Lucia",
+      "correct": true
+    },
+    {
+      "expected": "Freya",
+      "completion": "Freya",
+      "correct": true
+    },
+    {
+      "expected": "Bilal",
+      "completion": "Bilal",
+      "correct": true
+    },
+    {
+      "expected": "Amara",
+      "completion": "Amara",
+      "correct": true
+    },
+    {
+      "expected": "Mateo",
+      "completion": "Mateo",
+      "correct": true
+    },
+    {
+      "expected": "Gideon",
+      "completion": "Gideon",
+      "correct": true
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus",
+      "completion": "Cyrus",
+      "correct": true
+    },
+    {
+      "expected": "Kofi",
+      "completion": "Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Kofi",
+      "completion": "Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Victor",
+      "completion": "Victor",
+      "correct": true
+    },
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Noor",
+      "completion": "Noor",
+      "correct": true
+    },
+    {
+      "expected": "Dalia",
+      "completion": "Dalia",
+      "correct": true
+    }
+  ]
+}

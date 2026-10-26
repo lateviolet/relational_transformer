@@ -1,0 +1,91 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed5",
+  "data": "./nlp_pair_data/test_unseen_templates.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "examples": 128,
+  "accuracy": 1.0,
+  "samples": [
+    {
+      "expected": "Cesar, Willa",
+      "completion": "Cesar, Willa",
+      "correct": true
+    },
+    {
+      "expected": "Zara, Zoya",
+      "completion": "Zara, Zoya",
+      "correct": true
+    },
+    {
+      "expected": "Jamal, Nikolai",
+      "completion": "Jamal, Nikolai",
+      "correct": true
+    },
+    {
+      "expected": "Willa, Eitan",
+      "completion": "Willa, Eitan",
+      "correct": true
+    },
+    {
+      "expected": "Priya, Kalani",
+      "completion": "Priya, Kalani",
+      "correct": true
+    },
+    {
+      "expected": "Yuki, Eitan",
+      "completion": "Yuki, Eitan",
+      "correct": true
+    },
+    {
+      "expected": "Rami, Amara",
+      "completion": "Rami, Amara",
+      "correct": true
+    },
+    {
+      "expected": "Daria, Fiona",
+      "completion": "Daria, Fiona",
+      "correct": true
+    },
+    {
+      "expected": "Winston, Noor",
+      "completion": "Winston, Noor",
+      "correct": true
+    },
+    {
+      "expected": "Rafael, Kofi",
+      "completion": "Rafael, Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Ulyana, Kofi",
+      "completion": "Ulyana, Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Imani, Emil",
+      "completion": "Imani, Emil",
+      "correct": true
+    },
+    {
+      "expected": "Lucia, Amara",
+      "completion": "Lucia, Amara",
+      "correct": true
+    },
+    {
+      "expected": "Sami, Yusuf",
+      "completion": "Sami, Yusuf",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Yosef",
+      "completion": "Opal, Yosef",
+      "correct": true
+    },
+    {
+      "expected": "Jamal, Leila",
+      "completion": "Jamal, Leila",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    }
+  ],
+  "examples": 128,
+  "accuracy": 0.1953125,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Sami",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Willa, Daria",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Vikram, Selin",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Tariq",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Yusuf, Leila",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Rafael, Jamal",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Rafael",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Fiona, Hassan",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Keiko, Yuki",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Mira, Gita",
+      "correct": true
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Dalia, Rafael",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Mira, Selin",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Sami, Petra",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Freya, Mira",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Talia, Victor",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Amara, Lorenzo",
+      "correct": false
+    }
+  ]
+}

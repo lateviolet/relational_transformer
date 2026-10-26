@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed1",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 2,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.40625,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Idris, Noor",
+      "correct": true
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Name, Name, Name, Name, Name, Name, Name, Name, Name, Name, Name, Name,",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Gustav",
+      "correct": true
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Yusuf, Jasper",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Name, Name, Name, Name, Name, Name, Name, Name, Name, Name, Name, Name,",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Rafael",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Opal, Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Direct: Reporting: Reporting: Reporting: Reporting: Reporting: Reporting: Reporting: Reporting: Reporting: Reporting: Reporting:",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Valeria, Petra",
+      "correct": true
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Direct, Report, Target, Report, Target, Report, Target, Report, Target, Report, Target, Report,",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Mira, Helena",
+      "correct": true
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Name, Name, Name, Name, Name, Name, Name, Name, Name, Name, Name, Name,",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Keiko, Talia",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 128,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "this this this this this this this this this this this this this this this this this this this this this this this this",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": ",\n\n\nfifififififififfifrhevirdrejaredreajre",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "i,xikerexikerexikerexikerexikerexikerexikerex",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "in in in in in in in in in ini\ni\n i i i i i i i i i i",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Idris, Ulyna\n Valereii i i i i i i i i i i i i",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": ".\n.\n - Jasper report, Valeria.\n - Cesar.\n - Zora report.\n - Mina report.\n -",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "that kalaniihaliihaliihaliihaliihaliihaliihal",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "i,i,i,i,i,i,i,i,i,i,i,i,",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "\"a\" same order\", same order\", same order\", same order\", same order\", same order\", same order\",",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Keicopii,i,i,i,i,i,i,i,i,i,",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "????????????????????????",
+      "correct": false
+    }
+  ]
+}

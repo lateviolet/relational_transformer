@@ -1,0 +1,91 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed2",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "examples": 128,
+  "accuracy": 1.0,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Jae",
+      "correct": true
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Idris, Noor",
+      "correct": true
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Vikram, Yosef",
+      "correct": true
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Gustav",
+      "correct": true
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Yusuf, Jasper",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Nikolai, Kofi",
+      "correct": true
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Rafael",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Opal, Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Hana, Zoe",
+      "correct": true
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Mira, Gita",
+      "correct": true
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Valeria, Petra",
+      "correct": true
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Eitan, Selin",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Jae",
+      "correct": true
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Mira, Helena",
+      "correct": true
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Talia, Mateo",
+      "correct": true
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Amara, Talia",
+      "correct": true
+    }
+  ]
+}

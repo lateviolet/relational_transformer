@@ -1,0 +1,29 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "",
+  "data": "./nlp_data/valid_id.jsonl",
+  "examples": 4,
+  "accuracy": 0.25,
+  "samples": [
+    {
+      "expected": "Sofia",
+      "completion": "Sofia",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Sofia",
+      "correct": false
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Sofia\n\nThe following table shows the number of students in each",
+      "correct": false
+    },
+    {
+      "expected": "Freya",
+      "completion": "Sofia",
+      "correct": false
+    }
+  ]
+}

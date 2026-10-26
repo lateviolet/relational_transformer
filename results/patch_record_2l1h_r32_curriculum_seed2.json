@@ -1,0 +1,59 @@
+{
+  "checkpoint": "./checkpoints/record_2l1h_r32_curriculum_seed2.pt",
+  "examples": 512,
+  "manual_matches_model": 1.0,
+  "query_patch_no_op": 1.0,
+  "clean": {
+    "answer_1": 0.990234375,
+    "answer_2": 1.0,
+    "joint": 0.990234375
+  },
+  "query_swap": {
+    "answer_1": 0.990234375,
+    "answer_2": 1.0,
+    "joint": 0.990234375
+  },
+  "query_slot_patching": {
+    "slot_0": {
+      "answer_1": 0.0,
+      "answer_2": 1.0,
+      "joint": 0.0,
+      "answer_1_becomes_query_2": 0.998046875,
+      "answer_2_becomes_query_1": 0.0
+    },
+    "slot_1": {
+      "answer_1": 0.99609375,
+      "answer_2": 0.0,
+      "joint": 0.0,
+      "answer_1_becomes_query_2": 0.0,
+      "answer_2_becomes_query_1": 1.0
+    },
+    "both_slots": {
+      "answer_1": 0.0,
+      "answer_2": 0.0,
+      "joint": 0.0,
+      "answer_1_becomes_query_2": 0.990234375,
+      "answer_2_becomes_query_1": 1.0
+    }
+  },
+  "layer_head_patching_from_swapped_query": [
+    {
+      "layer": 0,
+      "head": 0,
+      "answer_1": 0.99609375,
+      "answer_2": 0.0,
+      "joint": 0.0,
+      "answer_1_becomes_query_2": 0.0,
+      "answer_2_becomes_query_1": 1.0
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "answer_1": 0.00390625,
+      "answer_2": 0.998046875,
+      "joint": 0.00390625,
+      "answer_1_becomes_query_2": 0.787109375,
+      "answer_2_becomes_query_1": 0.0
+    }
+  ]
+}

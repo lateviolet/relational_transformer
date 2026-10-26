@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_r32.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.203125,
+  "samples": [
+    {
+      "expected": "Omar, Victor",
+      "completion": "Mina, Victor",
+      "correct": false
+    },
+    {
+      "expected": "Hassan, Jasper",
+      "completion": "Gita, Yusuf",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Lucia",
+      "completion": "Rami, Freya",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mina",
+      "completion": "Talia, Gideon",
+      "correct": false
+    },
+    {
+      "expected": "Mateo, Mina",
+      "completion": "Mateo, Zoya",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Teo",
+      "completion": "Nikolai, Teo",
+      "correct": true
+    },
+    {
+      "expected": "Daria, Victor",
+      "completion": "Vicky, Victor",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Zoe",
+      "completion": "Gideon, Cesar",
+      "correct": false
+    },
+    {
+      "expected": "Nadir, Idris",
+      "completion": "Gita, Ines",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Eitan",
+      "completion": "Gideon, Winston",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Hassan",
+      "completion": "Fiona, Yosef",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Rhea",
+      "completion": "Orla, Yuki",
+      "correct": false
+    },
+    {
+      "expected": "Fiona, Helena",
+      "completion": "Eitan, Nadir",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Victor",
+      "completion": "Cyrus, Sami",
+      "correct": false
+    },
+    {
+      "expected": "Pavel, Rhea",
+      "completion": "Pavel, Rhea",
+      "correct": true
+    },
+    {
+      "expected": "Gideon, Mina",
+      "completion": "Gideon, Mina",
+      "correct": true
+    }
+  ]
+}

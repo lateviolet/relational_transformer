@@ -1,0 +1,91 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_query_swap.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "examples": 128,
+  "accuracy": 1.0,
+  "samples": [
+    {
+      "expected": "Kalani, Opal",
+      "completion": "Kalani, Opal",
+      "correct": true
+    },
+    {
+      "expected": "Nadir, Talia",
+      "completion": "Nadir, Talia",
+      "correct": true
+    },
+    {
+      "expected": "Helena, Daria",
+      "completion": "Helena, Daria",
+      "correct": true
+    },
+    {
+      "expected": "Willa, Rami",
+      "completion": "Willa, Rami",
+      "correct": true
+    },
+    {
+      "expected": "Rhea, Priya",
+      "completion": "Rhea, Priya",
+      "correct": true
+    },
+    {
+      "expected": "Leila, Jasper",
+      "completion": "Leila, Jasper",
+      "correct": true
+    },
+    {
+      "expected": "Orla, Mira",
+      "completion": "Orla, Mira",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": "Cyrus, Yusuf",
+      "correct": true
+    },
+    {
+      "expected": "Ines, Uma",
+      "completion": "Ines, Uma",
+      "correct": true
+    },
+    {
+      "expected": "Gustav, Willa",
+      "completion": "Gustav, Willa",
+      "correct": true
+    },
+    {
+      "expected": "Rafael, Gideon",
+      "completion": "Rafael, Gideon",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus, Yusuf",
+      "completion": "Cyrus, Yusuf",
+      "correct": true
+    },
+    {
+      "expected": "Hana, Bilal",
+      "completion": "Hana, Bilal",
+      "correct": true
+    },
+    {
+      "expected": "Helena, Ulyana",
+      "completion": "Helena, Ulyana",
+      "correct": true
+    },
+    {
+      "expected": "Avery, Rhea",
+      "completion": "Avery, Rhea",
+      "correct": true
+    },
+    {
+      "expected": "Valeria, Zoe",
+      "completion": "Valeria, Zoe",
+      "correct": true
+    }
+  ]
+}

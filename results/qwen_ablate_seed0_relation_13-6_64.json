@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_unseen_relation.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.15625,
+  "samples": [
+    {
+      "expected": "Teo, Selin",
+      "completion": "Teo, Selin",
+      "correct": true
+    },
+    {
+      "expected": "Leila, Kalani",
+      "completion": "Leila, Ulyana",
+      "correct": false
+    },
+    {
+      "expected": "Dalia, Rami",
+      "completion": "Rami, Petra",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Freya",
+      "completion": "Nikolai, Talia",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Yusuf",
+      "completion": "Hassan, Yusuf",
+      "correct": false
+    },
+    {
+      "expected": "Zara, Leila",
+      "completion": "Lorenzo, Petra",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Amara",
+      "completion": "Ines, Petra",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Cesar",
+      "completion": "Rhea, Cesar",
+      "correct": false
+    },
+    {
+      "expected": "Orla, Amara",
+      "completion": "Orla, Amara",
+      "correct": true
+    },
+    {
+      "expected": "Yosef, Hassan",
+      "completion": "Jasper, Kalani",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Gustav",
+      "completion": "Valeria, Gustav",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Rafael",
+      "completion": "Cesar, Talia",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Tariq",
+      "completion": "Nikolai, Selin",
+      "correct": false
+    },
+    {
+      "expected": "Freya, Avery",
+      "completion": "Freya, Avery",
+      "correct": true
+    },
+    {
+      "expected": "Imani, Opal",
+      "completion": "Imani, Fiona",
+      "correct": false
+    },
+    {
+      "expected": "Rami, Uma",
+      "completion": "Omar, Hana",
+      "correct": false
+    }
+  ]
+}

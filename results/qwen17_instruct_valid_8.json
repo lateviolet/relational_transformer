@@ -1,0 +1,49 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "adapter": "",
+  "data": "./nlp_data/valid_id.jsonl",
+  "examples": 8,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Sofia",
+      "completion": "Let's analyze the relationship records step by step.\n\n### Given:\n- **In",
+      "correct": false
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Let's trace the network step by step:\n\n1. **Zoya** is",
+      "correct": false
+    },
+    {
+      "expected": "Lucia",
+      "completion": "To solve this, we follow the chain of \"reports to\" relationships:\n\n1",
+      "correct": false
+    },
+    {
+      "expected": "Freya",
+      "completion": "We are given a set of **relationship records** of the form:\n\n- **",
+      "correct": false
+    },
+    {
+      "expected": "Bilal",
+      "completion": "Let's trace the network step by step:\n\n1. **Victor** is",
+      "correct": false
+    },
+    {
+      "expected": "Amara",
+      "completion": "To determine who is reached by starting with Freya and taking two \"mentors",
+      "correct": false
+    },
+    {
+      "expected": "Mateo",
+      "completion": "We are given a set of **relationship records** of the form:\n\n- **",
+      "correct": false
+    },
+    {
+      "expected": "Gideon",
+      "completion": "Let's trace the network step by step:\n\n1. **Hassan reports",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "checkpoint": "./checkpoints/record_2l2h_r32_failedseed6.pt",
+  "examples": 512,
+  "manual_matches_model": 1.0,
+  "query_patch_no_op": 1.0,
+  "clean": {
+    "answer_1": 1.0,
+    "answer_2": 0.046875,
+    "joint": 0.046875
+  },
+  "query_swap": {
+    "answer_1": 1.0,
+    "answer_2": 0.04296875,
+    "joint": 0.04296875
+  },
+  "query_slot_patching": {
+    "slot_0": {
+      "answer_1": 0.0,
+      "answer_2": 0.01171875,
+      "joint": 0.0,
+      "answer_1_becomes_query_2": 1.0,
+      "answer_2_becomes_query_1": 0.04296875
+    },
+    "slot_1": {
+      "answer_1": 1.0,
+      "answer_2": 0.046875,
+      "joint": 0.046875,
+      "answer_1_becomes_query_2": 0.0,
+      "answer_2_becomes_query_1": 0.015625
+    },
+    "both_slots": {
+      "answer_1": 0.0,
+      "answer_2": 0.01171875,
+      "joint": 0.0,
+      "answer_1_becomes_query_2": 1.0,
+      "answer_2_becomes_query_1": 0.04296875
+    }
+  },
+  "layer_head_patching_from_swapped_query": [
+    {
+      "layer": 0,
+      "head": 0,
+      "answer_1": 0.30078125,
+      "answer_2": 0.0390625,
+      "joint": 0.0078125,
+      "answer_1_becomes_query_2": 0.451171875,
+      "answer_2_becomes_query_1": 0.03515625
+    },
+    {
+      "layer": 0,
+      "head": 1,
+      "answer_1": 0.458984375,
+      "answer_2": 0.0390625,
+      "joint": 0.01171875,
+      "answer_1_becomes_query_2": 0.30078125,
+      "answer_2_becomes_query_1": 0.037109375
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "answer_1": 1.0,
+      "answer_2": 0.037109375,
+      "joint": 0.037109375,
+      "answer_1_becomes_query_2": 0.0,
+      "answer_2_becomes_query_1": 0.015625
+    },
+    {
+      "layer": 1,
+      "head": 1,
+      "answer_1": 1.0,
+      "answer_2": 0.03515625,
+      "joint": 0.03515625,
+      "answer_1_becomes_query_2": 0.0,
+      "answer_2_becomes_query_1": 0.03125
+    }
+  ]
+}

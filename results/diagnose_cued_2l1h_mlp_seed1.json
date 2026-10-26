@@ -1,0 +1,48 @@
+{
+  "examples": 512,
+  "final_accuracy": 0.498046875,
+  "layer_logit_lens": [
+    {
+      "layer": 0,
+      "query_predicts_intermediate": 0.107421875,
+      "final_predicts_answer": 0.240234375
+    },
+    {
+      "layer": 1,
+      "query_predicts_intermediate": 0.00390625,
+      "final_predicts_answer": 0.498046875
+    }
+  ],
+  "attention_to_hop_tokens": [
+    {
+      "layer": 0,
+      "head": 0,
+      "query_mass_on_first_value": 0.06588586419820786,
+      "query_top1_matches_first_value": 0.0,
+      "final_mass_on_second_value": 0.19878612458705902,
+      "final_top1_matches_second_value": 0.328125
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "query_mass_on_first_value": 0.333984375,
+      "query_top1_matches_first_value": 0.333984375,
+      "final_mass_on_second_value": 0.31054484844207764,
+      "final_top1_matches_second_value": 0.310546875
+    }
+  ],
+  "head_ablation": [
+    {
+      "layer": 0,
+      "head": 0,
+      "final_accuracy": 0.0703125,
+      "query_predicts_intermediate": 0.095703125
+    },
+    {
+      "layer": 1,
+      "head": 0,
+      "final_accuracy": 0.22265625,
+      "query_predicts_intermediate": 0.087890625
+    }
+  ]
+}

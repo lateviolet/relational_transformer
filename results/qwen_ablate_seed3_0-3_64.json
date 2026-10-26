@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed3",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.203125,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Jae,,",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Noor,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "the direct report target is Daria and Amara,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Kofi",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "the person that idris report, Jasper",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": ":, Kofi. Rafael.,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Rafael",
+      "correct": true
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Hassan, Zara",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": ":,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Mira, Gita",
+      "correct": true
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Valeria, Petra",
+      "correct": true
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Eitan, Talia, Talia",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Jae",
+      "correct": true
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Helena,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": ": Talia and Idris",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Amara, Talia",
+      "correct": true
+    }
+  ]
+}

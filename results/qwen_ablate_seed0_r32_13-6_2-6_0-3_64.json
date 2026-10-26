@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/test_r32.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Omar, Victor",
+      "completion": "Tariq, Gudic, Iman, Gif",
+      "correct": false
+    },
+    {
+      "expected": "Hassan, Jasper",
+      "completion": "\"dari\" link\", same order, \"dari\" link\", same orderi\" samei\" samei",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Lucia",
+      "completion": "is name, order, is is is is is is is is is is is is is is is is is is is",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mina",
+      "completion": ", Tariq, Uymanaa,q,,Tariq, Uyman",
+      "correct": false
+    },
+    {
+      "expected": "Mateo, Mina",
+      "completion": "all matter, all matter respectively? give exactly two names give exactly same order give exactly same order give same order give same",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Teo",
+      "completion": "samimraorder,uoryimraorderduzorimraorderduzorimraorderduz",
+      "correct": false
+    },
+    {
+      "expected": "Daria, Victor",
+      "completion": "Tariq, Ulyana",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Zoe",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Nadir, Idris",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Eitan",
+      "completion": "Darii, Yuki, Zeta, Gif, Yosef, Tariq, Zetai",
+      "correct": false
+    },
+    {
+      "expected": "Cesar, Hassan",
+      "completion": "\"same\"\",\"var\",\"\"var\",\"\"var\",\"\"var\",\"\"var\",\"\"var\",\"\"",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Rhea",
+      "completion": ",iimanreportiiimanreportiiimanreportiiimanreportiiimanreportiiimanreport",
+      "correct": false
+    },
+    {
+      "expected": "Fiona, Helena",
+      "completion": "",
+      "correct": false
+    },
+    {
+      "expected": "Cyrus, Victor",
+      "completion": "Tariq is\n, what is is is is is is is is is is is is is is is is is",
+      "correct": false
+    },
+    {
+      "expected": "Pavel, Rhea",
+      "completion": ",,,,,,,,,,,,,,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Gideon, Mina",
+      "completion": ",iMinthalximintelorTariqGiddenturGiddenturGiddent",
+      "correct": false
+    }
+  ]
+}

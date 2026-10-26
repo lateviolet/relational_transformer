@@ -1,0 +1,101 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed0",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 128,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "at will to to to to toititititititititititititititititit",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": ".\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.,,,,,,,,,,,",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Separimko, Nameko Kukukukukukukukukukukukukukukukukuk",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "at left end end end up up up up up up up up up up up up up up up up up up up",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "name only, order, answer name only answer name only answer name only answer name only answer name only answer name only answer",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Idris, Iopal,opal\nilopalililopililililililil",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "????????????????????????",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Tariq.\n - Gideon report - Zara report - Eitan.\n - - - - - - - -",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": ", Eitan, Kav.\n Noor, Bizen, Bizen, Bizen, Kav, Noor",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "at the same order as separated by a comma answer at same order as separated by comma answer at same order as separated by",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "is is is is is is is is is is is is is is is is is is is is is is is is",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "i,,,,,,i,i,i,i,i,i,i,i,i",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": ".aaaaaaaaaaa a a a a a a a a a a aa",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "two name only, in order, answer, two name only, in order, answer, two name only i can i",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "imariolponti,iploniiiiiiiiIiIIII",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "at the completeaaaaaaaaaaaaaaaaaaaaa",
+      "correct": false
+    }
+  ]
+}

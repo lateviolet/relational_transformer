@@ -1,0 +1,102 @@
+{
+  "num_keys": 32,
+  "num_values": 32,
+  "num_records": 8,
+  "d_model": 96,
+  "layers": 2,
+  "heads": 2,
+  "head_dim": 0,
+  "mlp": true,
+  "tie_heads": true,
+  "batch_size": 128,
+  "eval_batch_size": 1024,
+  "steps": 5000,
+  "eval_every": 500,
+  "lr": 0.001,
+  "seed": 0,
+  "device": "cuda",
+  "checkpoint": "",
+  "result_json": "./results/record_headnail_5seed/record_2l2h_tied_seed0.json",
+  "elapsed_seconds": 75.011,
+  "final_accuracy": 0.9849853515625,
+  "history": [
+    {
+      "step": 1,
+      "loss": 3.5034561157226562,
+      "answer_1_accuracy": 0.0325927734375,
+      "answer_2_accuracy": 0.0296630859375,
+      "joint_accuracy": 0.0009765625
+    },
+    {
+      "step": 500,
+      "loss": 0.9705658555030823,
+      "answer_1_accuracy": 0.5677490234375,
+      "answer_2_accuracy": 0.425048828125,
+      "joint_accuracy": 0.065673828125
+    },
+    {
+      "step": 1000,
+      "loss": 0.22123746573925018,
+      "answer_1_accuracy": 0.9798583984375,
+      "answer_2_accuracy": 0.948486328125,
+      "joint_accuracy": 0.9310302734375
+    },
+    {
+      "step": 1500,
+      "loss": 0.13589873909950256,
+      "answer_1_accuracy": 0.9891357421875,
+      "answer_2_accuracy": 0.9560546875,
+      "joint_accuracy": 0.951171875
+    },
+    {
+      "step": 2000,
+      "loss": 0.18093208968639374,
+      "answer_1_accuracy": 0.982666015625,
+      "answer_2_accuracy": 0.94921875,
+      "joint_accuracy": 0.94384765625
+    },
+    {
+      "step": 2500,
+      "loss": 0.04926807060837746,
+      "answer_1_accuracy": 0.9910888671875,
+      "answer_2_accuracy": 0.9703369140625,
+      "joint_accuracy": 0.9676513671875
+    },
+    {
+      "step": 3000,
+      "loss": 0.07264681160449982,
+      "answer_1_accuracy": 0.9964599609375,
+      "answer_2_accuracy": 0.9771728515625,
+      "joint_accuracy": 0.975830078125
+    },
+    {
+      "step": 3500,
+      "loss": 0.08059874922037125,
+      "answer_1_accuracy": 0.984130859375,
+      "answer_2_accuracy": 0.9559326171875,
+      "joint_accuracy": 0.9520263671875
+    },
+    {
+      "step": 4000,
+      "loss": 0.026999635621905327,
+      "answer_1_accuracy": 0.983154296875,
+      "answer_2_accuracy": 0.9615478515625,
+      "joint_accuracy": 0.95703125
+    },
+    {
+      "step": 4500,
+      "loss": 0.026342881843447685,
+      "answer_1_accuracy": 0.9957275390625,
+      "answer_2_accuracy": 0.9833984375,
+      "joint_accuracy": 0.983154296875
+    },
+    {
+      "step": 5000,
+      "loss": 0.02769920974969864,
+      "answer_1_accuracy": 0.99609375,
+      "answer_2_accuracy": 0.9854736328125,
+      "joint_accuracy": 0.9849853515625
+    }
+  ],
+  "gpu_name": "NVIDIA GeForce RTX 3090"
+}

@@ -1,0 +1,90 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_two_hop_v2_seed0",
+  "data": "./nlp_data_v2/test_unseen_templates.jsonl",
+  "prompt_field": "prompt",
+  "examples": 128,
+  "accuracy": 0.9921875,
+  "samples": [
+    {
+      "expected": "Tariq",
+      "completion": "Tariq",
+      "correct": true
+    },
+    {
+      "expected": "Gita",
+      "completion": "Gita",
+      "correct": true
+    },
+    {
+      "expected": "Yuki",
+      "completion": "Yuki",
+      "correct": true
+    },
+    {
+      "expected": "Noor",
+      "completion": "Noor",
+      "correct": true
+    },
+    {
+      "expected": "Dalia",
+      "completion": "Dalia",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus",
+      "completion": "Cyrus",
+      "correct": true
+    },
+    {
+      "expected": "Dalia",
+      "completion": "Dalia",
+      "correct": true
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Lucia",
+      "correct": true
+    },
+    {
+      "expected": "Bilal",
+      "completion": "Bilal",
+      "correct": true
+    },
+    {
+      "expected": "Uma",
+      "completion": "Uma",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Mateo",
+      "completion": "Mateo",
+      "correct": true
+    },
+    {
+      "expected": "Lucia",
+      "completion": "Lucia",
+      "correct": true
+    },
+    {
+      "expected": "Hassan",
+      "completion": "Hassan",
+      "correct": true
+    },
+    {
+      "expected": "Ines",
+      "completion": "Ines",
+      "correct": true
+    },
+    {
+      "expected": "Cyrus",
+      "completion": "Cyrus",
+      "correct": true
+    }
+  ]
+}

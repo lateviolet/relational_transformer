@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed2",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "\" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" \"",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Gideon.\n Gider.\n Gider.\n Gider.\n Gider.\n Gider.\n Gider.\n Gider.",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Tariq report Tariq report Tariq report Tariq report Tariq report Tariq report",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "that that that that that that that that that that that that thatthatthatthatthatthatthatthatthatthatthatthat",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "is answer with two name only is answer with two name only is answer with two name only is answer with two name only",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "is same same same same same same same same same same same same same same same same same same same same same same same",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "same order? same order? same order? same order? same order? same order? same order? same order?",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer is answer",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "noi two same same same same same same same same same same same same same same same same same same same same same",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "same order? same order? same order? same order? same order? same order? same order? same order?",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Kasi\n Kasi Kasi Kasi Kasi Kasi Kasi Kasi Kasi Kasi Kasi K",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "imimikimimikimimikimimikimimikimimikimimikimimik",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Tamei? Give exact two names and same order? Give exact two names and same order? Give exact two names",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "person that person that person that person that person that person that person that person that person that person that person that person that",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Tariq report Tariq report Tariq report Tariq report Tariq report Tariq report",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "text? text? text? text? text? text? text? text? text? text? text? text?",
+      "correct": false
+    }
+  ]
+}

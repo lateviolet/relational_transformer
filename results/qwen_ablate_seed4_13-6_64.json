@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed4",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.21875,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Bianka",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Yusuf, Idris",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Vikram, Orla",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Rafael, Nadir",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Mina, Petra",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Nikolai, Pavel",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Mateo, Priya",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Fiona, Zoe",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Hana, Zoe",
+      "correct": true
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Winston, Gita",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Dalia, Mira",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Eitan, Selin",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Jae",
+      "correct": true
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Mira, Winston",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Talia, Keiko",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Mateo, Talia",
+      "correct": false
+    }
+  ]
+}

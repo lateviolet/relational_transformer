@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed4",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "\"sif\", \"fif\", \"opal\", \"opal\", \"opal\", \"opal\",",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Name, Name, Name, Name, Name, Name1 Name1 Name1 Name1 Name1 Name1 Name1",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": ",,a,aaaaaaaaaaaaa a a a a d d d",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "what are order? what are order? what are order? what are order? what are order? what are order?",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "with two name only,order,yosefyoseefyefyefyefyefyyse",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "direct report target to two name with comma result opal return direct report target to two name with comma result opal return",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "same order, same order, same order, same order, same order, same order, same order, same order,",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "with two name only will now will now will now will now will now will now will now will now will now will now",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "imikikimikimikimikimikimikimikimikimikimikimikim",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "same order as same order, same order, same order, same order, same order, same order, same order,",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Mira, Cesar noor Dalia Cesar noorder Cesar noorder Cesar noorder Cesar no",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Kofi, Umeni, Umenii, Umenii, Umenii i i i",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "same order, separated by by same order same order same order same order same order same order same order same order same order",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": ",ordernameonlynameonlynameonlynameonlynameonlynameonlynameonlynameonlynameonlynameonlynameonly",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": ",,re,re,re,re,re,re,re,re,re,idrfim",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Caster, Matey, respectively? Give exactly two names, same order, separated by by comma answer respectively? give",
+      "correct": false
+    }
+  ]
+}

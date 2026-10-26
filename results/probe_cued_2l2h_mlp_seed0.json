@@ -1,0 +1,26 @@
+[
+  {
+    "layer": 0,
+    "position": "query",
+    "intermediate_probe": 0.0830078125,
+    "answer_probe": 0.080078125
+  },
+  {
+    "layer": 0,
+    "position": "final",
+    "intermediate_probe": 0.5625,
+    "answer_probe": 0.39453125
+  },
+  {
+    "layer": 1,
+    "position": "query",
+    "intermediate_probe": 0.591796875,
+    "answer_probe": 0.2548828125
+  },
+  {
+    "layer": 1,
+    "position": "final",
+    "intermediate_probe": 0.6162109375,
+    "answer_probe": 0.99609375
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed3",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    },
+    {
+      "layer": 2,
+      "head": 6
+    },
+    {
+      "layer": 0,
+      "head": 3
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.0,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Equal, equal, equal, equal, equal, equal, equal, equal, equal, equali equali equali",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Caster report to Caster report to Caster report Caster report Caster report Caster report Caster report C",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "isimandconimimandconimimandconimimandconimimandconimimandcon",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "\"\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",\",",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Answer, Answer, Name only Name only Name only Name only Name only Name only Name only Name only Name only Name only",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Separ from to toto.withwhichsoeversoeversoeversoeversoeversoeversoeversoeversoeversoeverquerququerququerqu",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "\",\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Name, Answer, Name, Answer Namea Answer Namea Answer Namea Answer Namea Answer Namea Answer Namea",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Iman: Iman, Iman, Iman, Iman, Iman, Iman, Iman,",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "same,,ame,ame,ameameameameameameameameameameameameameameameameame",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Yuzfimimunikununikununikununikununikununikunun",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "imreturnandimreturnandimreturnandimreturnandimreturnandimreturnandimreturnandimreturnand",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Union of Name Union Name Union Name Union Name Union Name Union Name Union Name Union Name Union Name Union Name Union Name Union",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "person that answer person that answer person that answer person that answer person that answer person that answer person that answer person that answer",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "which is is is is is is is is is is is is is is is is is is is is is is is",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "????????????????????????",
+      "correct": false
+    }
+  ]
+}

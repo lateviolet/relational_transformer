@@ -1,0 +1,97 @@
+{
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "adapter": "./lora_pair_seed1",
+  "data": "./nlp_pair_data/valid_id.jsonl",
+  "prompt_field": "prompt",
+  "match_mode": "exact",
+  "ablated_heads": [
+    {
+      "layer": 13,
+      "head": 6
+    }
+  ],
+  "examples": 64,
+  "accuracy": 0.109375,
+  "samples": [
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Selin, Orla",
+      "correct": false
+    },
+    {
+      "expected": "Idris, Noor",
+      "completion": "Yusuf, Yuki",
+      "correct": false
+    },
+    {
+      "expected": "Vikram, Yosef",
+      "completion": "Vikram, Selin",
+      "correct": false
+    },
+    {
+      "expected": "Rafael, Gustav",
+      "completion": "Nadir, Kofi",
+      "correct": false
+    },
+    {
+      "expected": "Yusuf, Jasper",
+      "completion": "Yusuf, Jasper",
+      "correct": true
+    },
+    {
+      "expected": "Nikolai, Kofi",
+      "completion": "Nikolai, Jamal",
+      "correct": false
+    },
+    {
+      "expected": "Ulyana, Rafael",
+      "completion": "Ulyana, Zara",
+      "correct": false
+    },
+    {
+      "expected": "Opal, Hassan",
+      "completion": "Uma, Fiona",
+      "correct": false
+    },
+    {
+      "expected": "Hana, Zoe",
+      "completion": "Sofia, Zoe",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Gita",
+      "completion": "Jasper, Gita",
+      "correct": false
+    },
+    {
+      "expected": "Valeria, Petra",
+      "completion": "Dalia, Kofi",
+      "correct": false
+    },
+    {
+      "expected": "Eitan, Selin",
+      "completion": "Gideon, Selin",
+      "correct": false
+    },
+    {
+      "expected": "Nikolai, Jae",
+      "completion": "Nikolai, Vikram",
+      "correct": false
+    },
+    {
+      "expected": "Mira, Helena",
+      "completion": "Mira, Winston",
+      "correct": false
+    },
+    {
+      "expected": "Talia, Mateo",
+      "completion": "Mira, Yosef",
+      "correct": false
+    },
+    {
+      "expected": "Amara, Talia",
+      "completion": "Mateo, Gustav",
+      "correct": false
+    }
+  ]
+}
